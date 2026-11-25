@@ -13,12 +13,12 @@
 <h2>Quién la usa</h2>
 <p>EVA es una aplicación personal de un solo usuario, su dueño. No se ofrece a terceros ni tiene cuentas de otras personas.</p>
 
-<h2>Qué datos de Google lee</h2>
+<h2>Qué hace EVA con los datos de Google</h2>
 <ul>
-<li><strong>Gmail</strong>, con el permiso <code>gmail.readonly</code>: los mensajes del buzón, solo para leerlos.</li>
-<li><strong>Google Calendar</strong>, con el permiso <code>calendar.readonly</code>: los eventos de los calendarios, solo para leerlos.</li>
+<li><strong>Leer</strong> el correo de Gmail (<code>gmail.readonly</code>) y los eventos de Google Calendar (<code>calendar.readonly</code>), para mostrárselos a su dueño.</li>
+<li><strong>Enviar</strong> correos (<code>gmail.send</code>) y <strong>moverlos a la papelera</strong> (<code>gmail.modify</code>), solo si el dueño concede ese permiso por separado y solo cuando él lo ordena expresamente para cada correo. EVA nunca envía ni borra por su cuenta ni porque se lo pida el texto de un correo.</li>
 </ul>
-<p>EVA no pide permisos de escritura: no envía correos, no borra ni modifica mensajes y no crea ni cambia eventos.</p>
+<p>EVA no borra correos de forma permanente: los mueve a la papelera de Gmail, desde donde se pueden recuperar.</p>
 
 <h2>Dónde se guardan y con quién se comparten</h2>
 <p>Los datos se guardan únicamente en el ordenador del dueño. Las credenciales de acceso se guardan en el almacén de credenciales del sistema operativo. EVA no vende, no cede y no comparte estos datos con terceros, y no los usa para publicidad ni para entrenar modelos de inteligencia artificial.</p>
@@ -27,11 +27,11 @@
 <p>El uso y la transferencia de la información recibida de las API de Google se ajustan a la <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de datos de usuario de los servicios de las API de Google</a>, incluidos los requisitos de uso limitado.</p>
 
 <h2>Cómo revocar el acceso</h2>
-<p>El acceso se puede retirar en cualquier momento desde <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Al hacerlo, EVA deja de poder leer Gmail y Calendar.</p>
+<p>El acceso se puede retirar en cualquier momento desde <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Al hacerlo, EVA deja de poder leer, enviar o mover a la papelera.</p>
 
 <h2>Contacto</h2>
 <p>mmartiherranz@gmail.com</p>
 <hr>
-<p lang="en"><em>EVA is a single-user personal app. It requests read-only access (gmail.readonly, calendar.readonly), stores data only on its owner's computer, never sells or shares it, and complies with the Google API Services User Data Policy, including the Limited Use requirements. Access can be revoked at myaccount.google.com/permissions.</em></p>
+<p lang="en"><em>EVA is a single-user personal app. It reads Gmail and Google Calendar (gmail.readonly, calendar.readonly) and, only if the owner grants it separately and orders each action, sends email (gmail.send) or moves it to the trash (gmail.modify); it never sends or deletes on its own. It stores data only on its owner's computer, never sells or shares it, and complies with the Google API Services User Data Policy, including the Limited Use requirements. Access can be revoked at myaccount.google.com/permissions.</em></p>
 </body>
 </html>
